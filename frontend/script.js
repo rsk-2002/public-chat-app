@@ -12,7 +12,7 @@ const messageInput = document.querySelector(".message-input");
 const form = document.querySelector("form");
 
 // connect to the server
-const socket = io("http://localhost:3000");
+const socket = io("https://gentle-refuge-51804.herokuapp.com");
 socket.on("check", (data)=> {
   console.log(data);
 })
