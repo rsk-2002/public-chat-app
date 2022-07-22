@@ -36,6 +36,9 @@ socket.on("sendthis", (obj)=>{
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  if(messageInput.value === ""){
+    return;
+  }
   var li = document.createElement("li");
   li.innerText = messageInput.value;
   li.classList.add("right");
